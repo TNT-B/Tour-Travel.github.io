@@ -687,3 +687,10 @@ header .search-bar-container label:hover{
   }
 
 }
+
+.map{
+  height : 300px;
+  width : 600px;
+}
+
+

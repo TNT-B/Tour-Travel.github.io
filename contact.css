@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+:root {
+  --orange: #ffa500;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--orange);
+  color: white;
+}
+.list-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+.card {
+  background-color: #242628;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 20px;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+.card-img {
+  width: 140px;
+  height: 140px;
+  border: 4px solid var(--orange);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  transform: translateY(25px);
+  transition: 0.5s;
+}
+.card h2{
+    margin-top: 35px;
+}
+
+.card p{
+    color: red;
+}
+.card-social{
+    margin: 25px 0;
+}
+.card-social a{
+    color: white;
+    margin: 25px 20px;
+    font-size:25px ;
+}
+.card-social a:hover{
+    color: #ffa500;
+}
+.card button{
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--orange);
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card button:hover{
+    background-color: var(--orange);
+}
+.card-img:hover{
+    width: 100%;
+    height: 100%;
+    transform: unset;
+    border: none;
+    border-radius: unset;
+
+}
