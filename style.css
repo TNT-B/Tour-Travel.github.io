@@ -33,6 +33,7 @@ section{
 .heading{
   text-align: center;
   padding:2.5rem 0;
+  margin-top : 6rem;
 }
 
 .heading span{
@@ -304,7 +305,7 @@ header .search-bar-container label:hover{
 .book{
   position: relative;
   top: 60px;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 .book .row .image{
   flex:1 1 40rem;
