@@ -23,7 +23,8 @@ body {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  top: 100px;
+  top: 200px;
+  margin-bottom: 100px;
 }
 .card {
   background-color: #242628;
@@ -87,4 +88,87 @@ img {
     border: none;
     border-radius: unset;
 
+}
+
+
+.modal{
+  position: fixed;
+  top: 0; right: 0;  left: 0; bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+
+}
+.open{
+  display: flex;
+}
+.contact{
+  position: relative;
+  background-color: #242628;
+  margin: 20px;
+  max-width: 1470px;
+}
+
+.modal-close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: red;
+  padding: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  font-size: 20px;
+}
+.modal-close:hover{
+  opacity: 1;
+}
+
+.contact-content{
+  margin-top: 48px;
+}
+
+
+.contact .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.contact .row .image{
+  flex:1 1 35rem;
+}
+
+.contact .row .image img{
+  width:100%;
+}
+
+.contact .row form{
+  flex:1 1 50rem;
+  padding:2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+
+.contact .row form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .row form .inputBox input, .contact .row form textarea{
+  width:49%;
+  margin:1rem 0;
+  padding:1rem;
+  font-size: 1.7rem;
+  color:#333;
+  background:#f7f7f7;
+  text-transform: none;
+}
+
+.contact .row form textarea{
+  height: 15rem;
+  resize: none;
+  width:100%;
 }

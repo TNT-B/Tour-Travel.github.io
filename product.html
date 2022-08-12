@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>product card</title>
+  <link rel="stylesheet" href="./product.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="./index.html" class="logo"><span>H</span>ome</a>
+
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here..." />
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+
+  <div class="content">
+    <div class="wrapper">
+      <div class="image">
+        <img src="./images/g-1.jpg" alt="" />
+      </div>
+      <div class="image">
+        <img src="./images/g-2.jpg" alt="" />
+      </div>
+      <div class="image">
+        <img src="./images/g-3.jpg" alt="" />
+      </div>
+      <div class="image">
+        <img src="./images/g-5.jpg" alt="" />
+      </div>
+
+      <div class="gallery">
+        <span class="control prev">
+          <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="control next">
+          <i class="fas fa-chevron-right"></i>
+        </span>
+        <div class="gallery-inner">
+          <img src="" alt="" />
+        </div>
+        <i class="fas fa-times close"></i>
+      </div>
+    </div>
+  </div>
+
+  <script src="./product.js"></script>
+
+ 
+</body>
+
+</html>

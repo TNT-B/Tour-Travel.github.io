@@ -20,7 +20,7 @@
 }
 
 html{
-  font-size: 62.5%;
+  font-size: 62.5%;           
   overflow-x: hidden;
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
@@ -292,15 +292,23 @@ header .search-bar-container label:hover{
   background:var(--orange);
 }
 
+
+
+
 .book .row{
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
   align-items: center;
 }
-
+.book{
+  position: relative;
+  top: 60px;
+  margin-bottom: 80px;
+}
 .book .row .image{
   flex:1 1 40rem;
+  
 }
 
 .book .row .image img{
@@ -422,6 +430,9 @@ header .search-bar-container label:hover{
   box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
 }
 
+
+
+
 .gallery .box-container{
   display: flex;
   flex-wrap: wrap;
@@ -470,6 +481,9 @@ header .search-bar-container label:hover{
   padding:.5rem 0;
 }
 
+
+
+
 .review .review-slider{
   padding-bottom: 2rem;
 }
@@ -505,49 +519,7 @@ header .search-bar-container label:hover{
   font-size: 1.7rem;
 }
 
-.contact .row{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
-  align-items: center;
-}
 
-.contact .row .image{
-  flex:1 1 35rem;
-}
-
-.contact .row .image img{
-  width:100%;
-}
-
-.contact .row form{
-  flex:1 1 50rem;
-  padding:2rem;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-  border-radius: .5rem;
-}
-
-.contact .row form .inputBox{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact .row form .inputBox input, .contact .row form textarea{
-  width:49%;
-  margin:1rem 0;
-  padding:1rem;
-  font-size: 1.7rem;
-  color:#333;
-  background:#f7f7f7;
-  text-transform: none;
-}
-
-.contact .row form textarea{
-  height: 15rem;
-  resize: none;
-  width:100%;
-}
 
 .brand-container{
   text-align: center;
@@ -555,6 +527,10 @@ header .search-bar-container label:hover{
 
 .footer{
   background:#333;
+  margin-top: 20px;;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 0;
 }
 
 .footer .box-container{
@@ -605,16 +581,11 @@ header .search-bar-container label:hover{
 .footer .credit span{
   color:var(--orange);
 }
+.map{
+  width: 350px;
+  margin: 20px;
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -692,5 +663,6 @@ header .search-bar-container label:hover{
   height : 300px;
   width : 600px;
 }
+
 
 
