@@ -99,3 +99,23 @@ html{
     color:orange;
     background-color: var(--secondary);
 }
+@media (max-width:768px){
+    .con{
+      display: block;
+      padding: 0px;
+    }
+    .nho{
+      padding: 0px;
+    }
+     .fa-caret-down{
+        display: none;
+    }
+    .dropdown__list{
+/*         width: 30%; */
+        margin-top: 1.5rem;
+    }
+    .dropdown__item{
+        text-align: center;
+        padding:0 10px;
+    }
+  }

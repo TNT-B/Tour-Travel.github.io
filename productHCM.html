@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="./index.html" class="logo"><span>H</span>ome</a>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here..." />
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <!-- card left -->
+            <div class="product-imgs">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img src="./images/sg1.webp" alt="">
+                        <img src="./images/hcm2.jpg" alt="">
+                        <img src="./images/hcm3.jpg" alt="">
+                        <img src="./images/hcm4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="img-select">
+                    <div class="img-item">
+                        <a href="#" data-id="1">
+                            <img src="./images/sg1.webp" alt="">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="2">
+                            <img src="./images/hcm2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="3">
+                            <img src="./images/hcm3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="4">
+                            <img src="./images/hcm4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- card right -->
+            <div class="product-content">
+                <h2 class="product-title">Thành phố Hồ Chí Minh</h2>
+                <a href="https://www.vntrip.vn/cam-nang/9-diem-du-lich-o-sai-gon-11347" class="product-link">suggest</a>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
+                </div>
+
+                <div class="product-price">
+                    <p class="last-price">Old Price: <span>1.200.000đ</span></p>
+                    <p class="new-price">New Price: <span>900.000đ (25%)</span></p>
+                </div>
+
+                <div class="product-detail">
+                    <h2>about this place: </h2>
+                    <p>Thành phố Hồ Chí Minh - hay còn được gọi với cái tên thân thương là Sài Gòn - là thành phố trung
+                        tâm miền Nam, lớn nhất, đông nhất, và cũng sôi động nhất cả nước. <br> <br>
+
+                        Được ưu ái cho nhiều cái tên, mỗi biệt danh của TP. Hồ Chí Minh lại tượng trưng cho một màu sắc,
+                        một tính cách hoàn toàn khác biệt. Nếu “thành phố không ngủ” là để chỉ sự sôi động, trẻ trung,
+                        luôn nhộn nhịp cả ngày lẫn đêm; thì “hòn ngọc Viễn Đông” lại gợi nhắc về một Sài Gòn hoài cổ,
+                        một Sài Gòn mang nét văn hóa khác biệt, giao hòa giữa Đông và Tây. <br> <br>
+
+                        Khám phá Sài Gòn, bạn sẽ bất ngờ với những tòa cao ốc chọc trời, nhưng cũng đừng bỏ qua cơ hội
+                        len lỏi giữa những khu chung cư cũ đã vài chục năm tuổi. Thành phố này có những di tích lịch sử
+                        vẫn luôn đứng sững qua mưa gió như chợ Bến Thành, dinh Độc Lập, nhà thờ Đức Bà; thì cũng có
+                        những điểm hẹn vui chơi mới như phố đi bộ Nguyễn Huệ, các trung tâm nghệ thuật đương đại, hay
+                        những quán cafe độc đáo, thể hiện sức sống và phong cách hiện đại của giới trẻ ngày nay. <br>
+                        <br>
+
+                        Dừng chân nơi đây, những du khách sành ăn nhất cũng sẽ thỏa mãn với danh sách dài những món ngon
+                        Sài Gòn nức tiếng gần xa như cơm tấm, hủ tiếu, bánh mì, ốc; hay những món ăn vặt luôn làm mưa
+                        làm gió trong giới trẻ như phá lấu, bánh tráng trộn, súp cua...
+
+                    </p>
+                    <ul>
+                        <li>Service: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempora!</span></li>
+                        <li>Transport: <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></li>
+                        <li>location: <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste?</span></li>
+                        <li>Food And Drinks: <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span></li>
+                    </ul>
+                </div>
+
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="btn">
+                        <a href="./book.html">Book now <i class="fas fa-shopping-cart"></i></a> 
+                    </button>
+                    <!-- <button type="button" class="btn">Compare</button> -->
+                </div>
+
+                <div class="social-links">
+                    <p>Share At: </p>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const imgs = document.querySelectorAll('.img-select a');
+        const imgBtns = [...imgs];
+        let imgId = 1;
+
+        imgBtns.forEach((imgItem) => {
+            imgItem.addEventListener('click', (event) => {
+                event.preventDefault();
+                imgId = imgItem.dataset.id;
+                slideImage();
+            });
+        });
+
+        function slideImage() {
+            const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+            document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+        }
+
+        window.addEventListener('resize', slideImage);
+    </script>
+</body>
+
+</html>

@@ -61,18 +61,23 @@
               </ul>
               </div>
            
-             <div class="con"> 
-          <div class="nho">  <a class="dropdown__select" href="book.html" style="padding: 0; font-size: 2.2rem;"  >book</a></div>
-          
-            <div class="nho"><a class="dropdown__select" href="./contact.html" style="padding: 0; font-size: 2.2rem;">contact</a></div>
-                </div>
+              <div class="con"> 
+                <div class="nho">  <a class="dropdown__select" href="book.html" style=" font-size: 2.2rem;"  >book</a></div>
+                <div class="nho"><a class="dropdown__select" href="./contact.html" style=" font-size: 2.2rem;">contact</a></div>    
+              </div>
         </nav>
         
         <div>
 
         <div class="icons">
             <i class="fas fa-search" id="search-btn"></i>
-            <i class="fas fa-user" id="login-btn"></i>
+            <a href="login.html">
+                <i class="fas fa-user" id="login-btn"></i>
+            </a>
+            <i class="fas fa-adjust adjust-btn-dark" id="adjust-btn"></i>
+
+            
+        
         </div>
 
         <form action="" class="search-bar-container">
@@ -80,401 +85,87 @@
             <label for="search-bar" class="fas fa-search"></label>
         </form>
 
+
     </header>
 
     <!-- header section ends -->
 
 
     <!-- login form container  -->
+    <div id="main" class="js-main dark-main">
 
-    <div class="login-form-container">
-
-        <i class="fas fa-times" id="form-close"></i>
-
-        <form action="">
-            <h3>login</h3>
-            <input type="email" class="box" placeholder="enter your email">
-            <input type="password" class="box" placeholder="enter your password">
-            <input type="submit" value="login now" class="btn">
-            <input type="checkbox" id="remember">
-            <label for="remember">remember me</label>
-            <p>forget password? <a href="#">click here</a></p>
-            <p>don't have and account? <a href="#">register now</a></p>
-        </form>
-
-    </div>
-
-
-    <!-- home section starts  -->
-
-    <section class="home" id="home">
-
-        <div class="content">
-            <h3>adventure is worthwhile</h3>
-            <p>Đánh thức phiêu lưu, khám phá vùng đất mới</p>
-            <!-- <a href="#" class="btn">discover more</a> -->
-        </div>
-
-        <div class="controls">
-            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
-            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
-            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
-            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
-            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
-        </div>
-
-        <div class="video-container">
-            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
-        </div>
-
-    </section>
-
-    <!-- home section ends -->
-
-    <!-- book section starts  -->
-
-    <!-- <section class="book" id="book">
-
-    <h1 class="heading">
-        <span>b</span>
-        <span>o</span>
-        <span>o</span>
-        <span>k</span>
-        <span class="space"></span>
-        <span>n</span>
-        <span>o</span>
-        <span>w</span>
-    </h1>
-
-    <div class="row">
-
-        <div class="image">
-            <img src="images/book-img.svg" alt="">
-        </div>
-
-        <form action="">
-            <div class="inputBox">
-                <h3>where to</h3>
-                <input type="text" placeholder="place name">
-            </div>
-            <div class="inputBox">
-                <h3>how many</h3>
-                <input type="number" placeholder="number of guests">
-            </div>
-            <div class="inputBox">
-                <h3>arrivals</h3>
-                <input type="date">
-            </div>
-            <div class="inputBox">
-                <h3>leaving</h3>
-                <input type="date">
-            </div>
-            <input type="submit" class="btn" value="book now">
-        </form>
-
-    </div>
-
-</section> -->
-
-    <!-- book section ends -->
-
-    <!-- packages section starts  -->
-
-    <section class="packages" id="packages">
-
-        <h1 class="heading">
-            <span>p</span>
-            <span>a</span>
-            <span>c</span>
-            <span>k</span>
-            <span>a</span>
-            <span>g</span>
-            <span>e</span>
-            <span>s</span>
-        </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="images/p-1.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> Sài Gòn </h3>
-                    <p>Thành phố không ngủ</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-2.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> Hà Nội </h3>
-                    <p>Thủ đô ngàn năm văn hiến</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-3.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> Đà Nẵng </h3>
-                    <p>Thành phố biển</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-4.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> Đà Lạt </h3>
-                    <p>Thành Phố Mù Sương</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-5.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> Hội An </h3>
-                    <p>Thành phố của những chiếc đèn lồng rực rỡ</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-6.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> Huế </h3>
-                    <p>Thành phố mộng mơ</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- packages section ends -->
-
-    <!-- services section starts  -->
-
-    <section class="services" id="services">
-
-        <h1 class="heading">
-            <span>s</span>
-            <span>e</span>
-            <span>r</span>
-            <span>v</span>
-            <span>i</span>
-            <span>c</span>
-            <span>e</span>
-            <span>s</span>
-        </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fas fa-hotel"></i>
-                <h3>Khách Sạn</h3>
-                <p>Khách sạn đa dạng và phong phú nhiều mức giá từ bình dân đến cao cấp cho bạn lựa chọn</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-utensils"></i>
-                <h3>Ẩm Thực</h3>
-                <p>Ẩm thực vô cùng phong phú đến từ rất nhiều vùng miền. Mỗi món ăn sẽ có những nét đặc trưng riêng, hương vị thì vô cùng đặc biệt và thú vị</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-bullhorn"></i>
-                <h3>Lưu Ý</h3>
-                <p>Bạn nên tìm hiểu những văn hoá, phong tục tập quán của mỗi vùng miền để có được trải nghiệm tuyệt vời nhất </p>
-            </div>
-            <div class="box">
-                <i class="fas fa-globe-asia"></i>
-                <h3>Quốc Tế</h3>
-                <p>Được thế giới công nhận nhờ những danh lam thắng cảnh tuyệt mỹ, chất lượng dịch vụ ngày một nâng cao, điểm đến hấp dẫn của nhiều du khách nước ngoài</p>
-            </div>
-            <div class="box">
-                <i class="fas fa-plane"></i>
-                <h3>Phương Tiện Di Chuyển</h3>
-                <p>Đa dạng như: đường bộ, đường hàng không, đường thuỷ, đường sắt. Giờ đây bạn có thể tham quan du lịch ở Việt Nam một cách thuận tiện, nhanh chóng. </p>
-            </div>
-            <div class="box">
-                <i class="fas fa-hiking"></i>
-                <h3>Trải Nghiệm</h3>
-                <p>Nhiều loại địa hình từ núi non hùng vĩ đến biển cả bao la rộng lớn, bạn có thể thoả sức phiêu lưu thám hiểm khi đặt chân đến Việt Nam</p>
-            </div>
-    
+        <div class="login-form-container">
+            
+            <i class="fas fa-times" id="form-close"></i>
     
         </div>
-
-    </section>
-
-    <!-- services section ends -->
-
-    <!-- gallery section starts  -->
-
-    <section class="gallery" id="gallery">
-
-        <h1 class="heading">
-            <span>g</span>
-            <span>a</span>
-            <span>l</span>
-            <span>l</span>
-            <span>e</span>
-            <span>r</span>
-            <span>y</span>
-        </h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="images/g-1.jpg" alt="">
-                <div class="content">
-                    <h3><i>Sài Gòn</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
-                </div>
+    
+    
+        <!-- home section starts  -->
+    
+        <section class="home" id="home">
+    
+            <div class="content">
+                <h3>adventure is worthwhile</h3>
+                <p>Đánh thức phiêu lưu, khám phá vùng đất mới</p>
+                <!-- <a href="#" class="btn">discover more</a> -->
             </div>
-            <div class="box">
-                <img src="images/g-2.jpg" alt="">
-                <div class="content">
-                    <h3><i>Nhà thờ Đức Bà</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
-                </div>
+    
+            <div class="controls">
+                <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+                <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+                <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+                <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+                <span class="vid-btn" data-src="images/vid-5.mp4"></span>
             </div>
-            <div class="box">
-                <img src="images/g-3.jpg" alt="">
-                <div class="content">
-                    <h3><i>Chùa Một Cột</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
-                </div>
+    
+            <div class="video-container">
+                <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
             </div>
-            <div class="box">
-                <img src="images/g-4.jpg" alt="">
-                <div class="content">
-                    <h3><i>Kinh Thành Huế</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
+    
+        </section>
+    
+    
+    
+        <section class="packages" id="packages">
+    
+            <h1 class="heading">
+                <span>p</span>
+                <span>a</span>
+                <span>c</span>
+                <span>k</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+    
+            <div class="box-container">
+    
+                <div class="box">
+                    <img src="images/p-1.jpg" alt="">
+                    <div class="content-dark">
+                        <div class="content">
+                            <h3> <i class="fas fa-map-marker-alt"></i> Sài Gòn </h3>
+                            <p>Thành phố không ngủ</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
+                            <a href="book.html" class="btn">book now</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <img src="images/g-5.jpg" alt="">
-                <div class="content">
-                    <h3><i>Thác Bản Giốc</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-6.jpg" alt="">
-                <div class="content">
-                    <h3><i>Tây Bắc</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-7.jpg" alt="">
-                <div class="content">
-                    <h3><i>Vịnh Hạ Long</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-8.jpg" alt="">
-                <div class="content">
-                    <h3><i>Phong Nha Kẻ Bàng</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/g-9.jpg" alt="">
-                <div class="content">
-                    <h3><i>Bà Nà Hills</i></h3>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
-                    <a href="#" class="btn">see more</a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- gallery section ends -->
-
-    <!-- review section starts  -->
-
-    <section class="review" id="review">
-
-        <h1 class="heading">
-            <span>r</span>
-            <span>e</span>
-            <span>v</span>
-            <span>i</span>
-            <span>e</span>
-            <span>w</span>
-        </h1>
-
-        <div class="swiper-container review-slider">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/binh.png" alt="">
-                        <h3>Thanh Bình</h3>
-                        <p>Rất tuyệt</p>
+    
+                <div class="box">
+                    <img src="images/p-2.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> Hà Nội </h3>
+                        <p>Thủ đô ngàn năm văn hiến</p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -482,27 +173,16 @@
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
+                        <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
+                        <a href="book.html" class="btn">book now</a>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/phuc.png" alt="">
-                        <h3>Thịnh Phúc</h3>
-                        <p>Trải nghiệm tốt</p>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="images/Vu.png" alt="">
-                        <h3>Vũ Lê</h3>
-                        <p>Hài lòng</p>
+    
+                <div class="box">
+                    <img src="images/p-3.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> Đà Nẵng </h3>
+                        <p>Thành phố biển</p>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -510,72 +190,300 @@
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
+                        <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
+                        <a href="book.html" class="btn">book now</a>
                     </div>
                 </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- review section ends -->
-
-    <!-- contact section starts  -->
-
-    <!-- <section class="contact" id="contact">
     
-    <h1 class="heading">
-        <span>c</span>
-        <span>o</span>
-        <span>n</span>
-        <span>t</span>
-        <span>a</span>
-        <span>c</span>
-        <span>t</span>
-    </h1>
-
-    <div class="row">
-
-        <div class="image">
-            <img src="images/contact-img.svg" alt="">
-        </div>
-
-        <form action="">
-            <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+                <div class="box">
+                    <img src="images/p-4.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> Đà Lạt </h3>
+                        <p>Thành Phố Mù Sương</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
+                        <a href="book.html" class="btn">book now</a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="images/p-5.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> Hội An </h3>
+                        <p>Thành phố của những chiếc đèn lồng rực rỡ</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
+                        <a href="book.html" class="btn">book now</a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="images/p-6.jpg" alt="">
+                    <div class="content">
+                        <h3> <i class="fas fa-map-marker-alt"></i> Huế </h3>
+                        <p>Thành phố mộng mơ</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> 900.000đ <span>1.200.000đ</span> </div>
+                        <a href="book.html" class="btn">book now</a>
+                    </div>
+                </div>
+    
             </div>
-            <div class="inputBox">
-                <input type="number" placeholder="number">
-                <input type="text" placeholder="subject">
+    
+        </section>
+    
+    
+    
+        <section class="services" id="services">
+    
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+    
+            <div class="box-container">
+    
+                <div class="box">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Khách Sạn</h3>
+                    <p>Khách sạn đa dạng và phong phú nhiều mức giá từ bình dân đến cao cấp cho bạn lựa chọn</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Ẩm Thực</h3>
+                    <p>Ẩm thực vô cùng phong phú đến từ rất nhiều vùng miền. Mỗi món ăn sẽ có những nét đặc trưng riêng, hương vị thì vô cùng đặc biệt và thú vị</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Lưu Ý</h3>
+                    <p>Bạn nên tìm hiểu những văn hoá, phong tục tập quán của mỗi vùng miền để có được trải nghiệm tuyệt vời nhất </p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>Quốc Tế</h3>
+                    <p>Được thế giới công nhận nhờ những danh lam thắng cảnh tuyệt mỹ, chất lượng dịch vụ ngày một nâng cao, điểm đến hấp dẫn của nhiều du khách nước ngoài</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-plane"></i>
+                    <h3>Phương Tiện Di Chuyển</h3>
+                    <p>Đa dạng như: đường bộ, đường hàng không, đường thuỷ, đường sắt. Giờ đây bạn có thể tham quan du lịch ở Việt Nam một cách thuận tiện, nhanh chóng. </p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-hiking"></i>
+                    <h3>Trải Nghiệm</h3>
+                    <p>Nhiều loại địa hình từ núi non hùng vĩ đến biển cả bao la rộng lớn, bạn có thể thoả sức phiêu lưu thám hiểm khi đặt chân đến Việt Nam</p>
+                </div>
+        
+        
             </div>
-            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn" value="send message">
-        </form>
-
+    
+        </section>
+    
+        <!-- services section ends -->
+    
+        <!-- gallery section starts  -->
+    
+        <section class="gallery" id="gallery">
+    
+            <h1 class="heading">
+                <span>g</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </h1>
+        
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="images/g-1.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Sài Gòn</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./productHCM.html" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-2.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Nhà thờ Đức Bà</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./productNTDB.html" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-3.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Chùa Một Cột</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./productCMC.html" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-4.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Kinh Thành Huế</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./productHue.html" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-5.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Thác Bản Giốc</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./productTBD.html" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-6.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Tây Bắc</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./productTayBac.html" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-7.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Vịnh Hạ Long</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./productVHL.html" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-8.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Phong Nha Kẻ Bàng</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./ProductPNKB.html" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/g-9.jpg" alt="">
+                    <div class="content">
+                        <h3><i>Bà Nà Hills</i></h3>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p> -->
+                        <a href="./productBaNaHill.html" class="btn">see more</a>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </section>
+    
+        <!-- gallery section ends -->
+    
+        <!-- review section starts  -->
+    
+        <section class="review" id="review">
+    
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+            </h1>
+    
+            <div class="swiper-container review-slider">
+    
+                <div class="swiper-wrapper">
+    
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="images/binh.png" alt="">
+                            <h3>Thanh Bình</h3>
+                            <p>Rất tuyệt</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="images/phuc.png" alt="">
+                            <h3>Thịnh Phúc</h3>
+                            <p>Trải nghiệm tốt</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="images/Vu.png" alt="">
+                            <h3>Vũ Lê</h3>
+                            <p>Hài lòng</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+    
+        </section>
+    
+    
+        <section class="brand-container">
+    
+            <div class="swiper-container brand-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+                </div>
+            </div>
+    
+        </section>
     </div>
-    
-</section> -->
 
-    <!-- contact section ends -->
-
-    <!-- brand section  -->
-    <section class="brand-container">
-
-        <div class="swiper-container brand-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
-            </div>
-        </div>
-
-    </section>
 
     <!-- footer section  -->
 
@@ -588,30 +496,6 @@
                 <p>"Kampai" = "Cheer" in Minions' language.</p>
 
             </div>
-            <!-- <div class="box">
-            <h3>branch locations</h3>
-            <a href="#">india</a>
-            <a href="#">USA</a>
-            <a href="#">japan</a>
-            <a href="#">france</a>
-        </div>
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#">home</a>
-            <a href="#">book</a>
-            <a href="#">packages</a>
-            <a href="#">services</a>
-            <a href="#">gallery</a>
-            <a href="#">review</a>
-            <a href="#">contact</a>
-        </div>
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
-            <a href="#">twitter</a>
-            <a href="#">linkedin</a>
-        </div> -->
 
             <div class="box">
                 <h3>Contact</h3>
@@ -631,11 +515,18 @@
 
             </div>
 
-        </div>
+        </div> 
 
         <h1 class="credit"> created by <span>Kampai Team</span> | @MindX </h1>
 
     </section>
+    
+    <div class="temperature">
+        <a href="./temperature.html" class="neon-button">
+            <i class="fa fa-temperature-low"></i>
+        </a>
+    </div>
+
 
     <!-- footer section end -->
 
@@ -646,6 +537,8 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <!-- login -->
+    <script src="main.js"></script>
 
 </body>
 

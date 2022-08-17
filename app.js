@@ -7,6 +7,18 @@ let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
 let contactBtn=document.querySelectorAll('.js-contact');
+let adjustBtn=document.querySelector('#adjust-btn')
+let main=document.querySelector('.js-main')
+
+
+// light dark mode
+
+main.classList.remove('dark-main')
+adjustBtn.addEventListener('click',()=>{
+  main.classList.toggle('dark-main')
+})
+
+
 
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
